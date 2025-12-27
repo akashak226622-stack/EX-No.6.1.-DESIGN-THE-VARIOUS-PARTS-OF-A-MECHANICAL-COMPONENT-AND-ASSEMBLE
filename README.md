@@ -1,70 +1,54 @@
-# EX-No.6.1. DESIGN THE VARIOUS PARTS OF A MECHANICAL COMPONENT AND ASSEMBLE
+# Ex. No. 6.1  - SIMULATION OF PRE PROCESSING IN ADDITIVE MANUFACTURING
 
-## DATE:
+## DATE:26/12/2025
+## AIM:
+### To simulate the Pre Processing for 3D printing.
 
-## AIM: 
-To Design the various parts of a mechanical component and assemble it using a bottom-up approach then convert it into the orthographic view
-
-## REQUIREMENTS: 
-1. Autodesk fusion 360
-2. Windows 10
-3. 4 GB of RAM (integrated graphics recommend 6 GB or more)
-4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
-
-## COMMANDS USED:
-### Align: 
-The Align tool allows you to align, distribute or organize selected elements, annotations, tags and text along the axis you specify. Furthermore, the Arrange feature will automatically neatly place your tags around the current view.
-The Align plug-in for Autodesk® Revit® can help to save time while producing complex drawings with large sets of annotation.
-Just select a few elements and the Align tool will sort them for you.
-
-### Derive:
-Insert design elements such as Components, Bodies, Sketches, Work geometry, Flat patterns or parameters from another design.
-The inserted elements update with changes to the original design
-
-### Move: Moves the selected face, body, sketch, or construction geometry a specified distance or angle.
-Select the objects to modify then specify the distance or angle. Use set pivot to reposition the manipulator
+## REQUIREMENTS:
+### System - Windows 7 or higher, 1 GB RAM.
 
 ## PROCEDURE:
-### STEP 1: 
- Identifying the given model.
+### Pre-processing encompasses the steps between design and printing. Process of 3D printing starts with designing in CAD. Then printer software slices 3D CAD file into layers. For each slice, the software converts the data into machine code that determines tool paths for the machine to follow. The various steps in pre-processing from design to printing are as follows:
 
-### STEP 2: Importing the components.
-Firstly, we import all the necessary parts into the assembly project. Here, we use Finger, gear linkage, Secondary Linkage, Base. For, Importing the components into the project, we use the insert derive option in the Insert>Insert Derive.
+### 1)	CAD File
+### 2)	Conversion to STL a. Orientation b. Support Structure c. Slicing d. Path Planning
 
-### STEP 3: 
-We place the base model onto the X-Y plane.
+### 1. CAD File
+### Every manufacturing process starts with the process of designing and as in any type of manufacturing, there are certain limitations to the materials and manufacturing processes that dictate how the product should be designed, 3D printing is no different. In 3d printing, characteristics of hardware, software, temperature, filament and many other factors play an important role in how a digital model translates into a printed object. Some of them are designed with a strong base, grain direction, overhung, wall thickness, round corners and tolerances.
 
-### STEP 4: Aligning the components
-Then we align the imported, Gear linkage model, in its respective slot of the base.
-For aligning the component onto the base, we use the align option, available in Modify>Align.
-For aligning the component onto the base, we first select the “from” coordinates then we select the “To” coordinates in the given base model. At first, the model might not align properly, so, we use the flip option to bring the component to the desired position.
+### 2. Conversion to STL
+### In order to check the interface of the object and make it reliable to 3d printers, conversion to STL file is required. It also facilitates other features like quick error check, bridging the gap between CAD platforms, exhibition purposes and 3D digitizer extension.
 
-### STEP 5: 
-We follow the same steps for aligning the components onto their respective      slots on the base component.
+### a. Orientation:
+### Orientation plays a vital role in the final product of 3d printing as it affects the part accuracy, manufacturing time, strength and surface finish. There are various orientations by which we can print the object such as vertically upward, vertically downward and in horizontal plane.
 
-### Note: 
-If the components do not fit properly into the slots, it can be moved into the slot using the Move option.
+### b. Support Structure:
+### Support structures are required where the objects are unable to get printed directly. Support structures help to guarantee the printability of a section during the 3D printing measure and also it can assist with forestalling part twisting, secure a section to the printing bed and guarantee that parts are joined to the fundamental body of the printed part.
 
-## INPUT: 
+### c. Slicing:
+### The motive behind slicing a 3D model is to transform the model into guidelines for the 3D printer. To play out this errand, the slicing software isolates the item into numerous layers. It's classified "slicing" since it "slices" the 3D model to make numerous layers. After the layers have been made, the slicing software applies different qualities to every one of them.
 
-#### LINKAGE
-![image](https://user-images.githubusercontent.com/113594316/199413513-8fa5b9db-0546-49d0-ad4c-230b22984d3c.png)
+### d. Path Planning:
+### Path planning helps to improve the printed surface quality, shape accuracy and infill distribution quality. There are various ways for path planning which can be used to print the objects which may affect the following factors in objects like raster path, grid path, spiral path and zigzag path.
 
-#### BASE PLATE  
-![image](https://user-images.githubusercontent.com/113594316/199413545-3b2fd515-6e27-4d28-9da3-c9ce20cb2a42.png)
+![image](https://github.com/Sellakumar1987/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/113594316/baef8515-67d7-4c96-accc-4ee88035c9e7)
 
-#### GEAR LINKAGE
-![image](https://user-images.githubusercontent.com/113594316/199413566-05708531-fc78-44c9-ab98-4f8a9066d318.png)
-
-#### FINGER
-![image](https://user-images.githubusercontent.com/113594316/199413594-5de9578e-5800-4e69-8c76-6a5749e31805.png)
-
-#### ASSEMBLED VIEW
-![image](https://user-images.githubusercontent.com/113594316/199413636-df0a61ce-964f-490d-9a16-e5986ebbf403.png)
+### ●	All the processes related to pre-processing will be shown on the screen.
+### ●	Select CAD file preparation from the visible list.
+### ●	When the first process is selected then it will open in the blank space in the left side of the screen.
+### ●	Select the options of process of pre-processing in the sequence in which they are shown.
+### ●	If the user follows an incorrect sequence then a pop-up will appear on the screen showing the name of the process to be selected.
 
 ## OUTPUT:
-<img width="1133" height="799" alt="image" src="https://github.com/user-attachments/assets/2f76cf15-2af4-4028-9376-e0beb2099b7f" />
+![image](https://github.com/user-attachments/assets/4f54492e-ceb9-4408-ae9c-99a18d5ebfbd)
+![image](https://github.com/user-attachments/assets/4cf23e5d-0cd4-4283-bd63-b8426f09939b)
+![image](https://github.com/user-attachments/assets/1fd23621-b19f-4521-89a6-5434527d1c27)
+
+![Screenshot 2024-10-26 105840](https://github.com/user-attachments/assets/77854511-846b-454b-8645-825982d69f1b)
 
 
-## RESULT:
-Thus, a design of various parts of a mechanical component and assemble it using a bottom-up approach in orthographic view has been done
+### Name: AKASH.A
+### Register Number: 25004845
+
+## Result: 
+### Thus the simulation on the Preprocessing in additive manufacturing is completed.
